@@ -3,7 +3,7 @@ Code for ["Memory Uncertainty Learning for Real-World Single Image Deraining" wi
 
 ## Training
 
-Please download the real-world train subset and test set of SSID in the [link](https://drive.google.com/drive/folders/1bSOX_lSnuTDkwpOXw17up7zEPaqFXeVg?usp=sharing) as well as the [DDN](https://drive.google.com/file/d/10cu6MA4fQ2Dz16zfzyrQWDDhOWhRdhpq/view?usp=sharing) dataset and [SPA](https://stevewongv.github.io/derain-project.html) dataset and put them in the data folder. Adjust the parameters in  'config.yaml'  according to your own settings. 
+Please download the real-world train subset and test set of SSID in the [Google Driver](https://drive.google.com/drive/folders/1bSOX_lSnuTDkwpOXw17up7zEPaqFXeVg?usp=sharing) as well as the [DDN](https://drive.google.com/file/d/10cu6MA4fQ2Dz16zfzyrQWDDhOWhRdhpq/view?usp=sharing) dataset and [SPA](https://stevewongv.github.io/derain-project.html) dataset and put them in the data folder. Adjust the parameters in  'config.yaml'  according to your own settings. 
 
 Train MUSS:
 
