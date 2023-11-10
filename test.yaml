@@ -1,0 +1,62 @@
+
+pretrained:  'ckpt/muss.pth'
+
+testfiles: 'data/ssid_real_test.list'
+testroot:  'data/ssid_real_test' 
+
+save_image_path: 'data/results'
+
+pretrain_epochs: 500
+
+weight_pixel: 1.0
+weight_real: 1
+weight_pseudo: 1.0
+weight_tv: 0.001
+weight_adv: 0.01
+
+uncertainty_times: 5
+uncertainty_low: 0.1
+
+with_noise: true
+
+learning_rate_g: 0.0001
+learning_rate_d: 0.00001
+
+moving_average_rate: 0.999
+moving_average_decay: 0.999
+update_moving_iter: 500
+
+ngf: 16
+delta: 16
+num_blocks: 5
+num_scales: 3
+num_layers: 4
+change_channel_layers: '0,4,8,12,16'
+resize_layers: '0,4,8'
+kdim: 512
+max_T: 0.72
+min_T: 0.03
+decay_alpha: 0.99998
+ndf: 32
+
+output_size: 256
+test_output_size: null
+
+batchsize: 8
+test_batchsize: 1
+data_augment: 2
+
+save_iter: 500
+test_iter: 600
+
+total_epochs: 500
+iters_per_epoch: 500
+
+align_scale: 8
+
+workers: 32
+
+
+
+
+

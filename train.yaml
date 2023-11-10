@@ -1,0 +1,68 @@
+
+pretrained:  'ckpt/muss.pth'
+
+pretrain_epochs: 10
+
+syn_files: 'ssir_train.list,spa_train.txt'
+syn_trainroot: 'data/ddn/ddn_train,data/spa/train'
+
+real_files: 'real_train.txt'
+real_trainroot: 'data/ssid/ssid_real_train'
+
+testfiles: 'ssir_test.list'
+testroot:  'data/ssir/ssir_test' 
+
+weight_pixel: 1.0
+weight_real: 1
+weight_pseudo: 1.0
+weight_tv: 0.001
+weight_adv: 0.01
+
+uncertainty_times: 5
+uncertainty_low: 0.2
+
+with_noise: true
+
+learning_rate_g: 0.00001
+learning_rate_d: 0.00001
+
+moving_average_rate: 0.999
+moving_average_decay: 0.999
+update_moving_iter: 500
+
+ngf: 16
+delta: 16
+num_blocks: 5
+num_scales: 3
+num_layers: 4
+change_channel_layers: '0,4,8,12,16'
+resize_layers: '0,4,8'
+kdim: 512
+max_T: 0.52
+min_T: 0.03
+decay_alpha: 0.999998
+ndf: 32
+
+output_size: 256
+test_output_size: null
+random_scale: 0.5
+
+batchsize: 56
+test_batchsize: 1
+data_augment: 1
+
+save_iter: 2000
+test_iter: 100
+
+total_epochs: 500
+iters_per_epoch: 500
+
+align_scale: 8
+
+workers: 32
+
+save_image_path: 'results'
+
+
+
+
