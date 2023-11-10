@@ -9,6 +9,10 @@ Train MUSS:
 
 	 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python train.py --config_file='train.yaml'  
 
+## Testing
+
+The pretrained weights of MUSS can be downloaded in the [Google Driver](https://drive.google.com/drive/folders/1bSOX_lSnuTDkwpOXw17up7zEPaqFXeVg?usp=sharing) 
+
 Test SWAL:
 
     python test.py --config_file='test.yaml' 
